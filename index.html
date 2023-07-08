@@ -1,0 +1,65 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class='video'>
+        <script src="https://use.fontawesome.com/20603b964f.js"></script>
+        <script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
+        <script type="text/javascript">
+            jwplayer.key = '=';
+        </script>
+        <div id="myElement"></div>
+        <script type="text/javascript">
+            jwplayer("myElement").setup({
+                image: "https://puui.wetvinfo.com/vcover_hz_pic/0/jho08eh15kv9teg1687171055925/0",
+                aspectratio: "16:9",
+                width: '100%',
+                aspectratio: '16:9',
+                autostart: false,
+                file: 'http://bigf.bigo.sg/asia_live/V4s7/2apOq5.mp4',
+                abouttext: 'DRAMASABAY',
+                aboutlink: 'https://dramasabay.com',
+                captions: {
+                    color: '#ffb800',
+                    fontSize: 30,
+                    backgroundOpacity: 0
+                },
+                sharing: {
+                    sites: ['facebook', 'twitter', 'tumblr', 'googleplus', {
+                        icon: '',
+                        src: 'http://www.jwplayer.com/?',
+                        label: 'jwplayer'
+                    }],
+                    code: encodeURI("<iframe src='<?php echo $sharing;?>' width='100' height='auto'></iframe>"),
+                    link: "<?php echo $sharing;?>"
+                }
+            })
+        </script>
+
+        <script>
+            setInterval(() => {
+                const item = document.querySelector('.jw-button-container .jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-logo-button');
+                if (item) {
+                    item.innerHTML = `
+                    
+
+
+`;
+                }
+
+            }, 1000);
+
+            console.log(`
+==================================================
+- Copyright by WWW.DRAMASABAY.COM
+- Owner by: @2021
+- Hosting by: DRAMASABAY.COM
+==================================================
+            `)
+        </script>
+    </div>
+</body>
+
+</html>
